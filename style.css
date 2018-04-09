@@ -56,7 +56,9 @@ header .headline{
   background-position: center;
  
 }
-
+#nav-drawer{
+  display: none;
+}
 .main-visual-content{
   width: 500px; /* 横幅を指定 */
   height: 300px; /* 親の高さに揃える */
@@ -237,6 +239,7 @@ text-align: center; /* 文字を真ん中に寄せる */
   padding-top: 10px;
   font-size:16px;
   color:#000000;
+  text-align: left;
 }
 .textG{
   padding-top: 10px;
@@ -247,6 +250,7 @@ text-align: center; /* 文字を真ん中に寄せる */
   padding-top: 10px;
   font-size:16px;
   color:#000000;
+  text-align: left;
 }
 .textI{
   padding-top: 10px;
@@ -257,6 +261,7 @@ text-align: center; /* 文字を真ん中に寄せる */
   padding-top: 10px;
   font-size:16px;
   color:#000000;
+  text-align: left;
 }
 
 .Profile{
@@ -274,7 +279,11 @@ text-align: center; /* 文字を真ん中に寄せる */
 .Profile_title{
   font-size: 32px;
 }
-.Profile_title h2::after{
+.bunsyou{
+  font-size: 32px;
+
+}
+.bunnsyou::after{
 content:"";
 background-color: red;
 width: 70px;
@@ -349,15 +358,7 @@ font-size:20px;
 .contact_title{
   font-size: 32px;
 }
-.contact_title h2::after{
-content:"";
-background-color: red;
-width: 70px;
-height: 3px;
-margin: 0 auto;
-display: block;
 
-}
 .contact_text{
   padding-top: 38px;
   font-size:16px;
@@ -454,8 +455,19 @@ footer {
   float: right;
   width: 40px;
   height:40px;
-border:1px solid #FAFAFA;
-margin-top: 5px;
+  border:1px solid #FAFAFA;
+  margin-top: 5px;
+  display: block;
+  text-align: center;
+
+}
+.fa-bars{
+  display: inline-block;
+  padding-top: 2px;
+  padding-right: 2px;
+  font-size: 32px;
+  width: 40px;
+  color: "#FFF"
 }
 
 .list-bar{
@@ -556,14 +568,14 @@ margin-top: 5px;
 }
 .Profile5{
   float: none;
-  width: 512px;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   padding-top: 30px;
 }
 .syasinnbox{
   float: none;
-  width: 512px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -595,8 +607,6 @@ margin-top: 5px;
 }
 nav{
   width: 100%;
-}
-.menu-box{
 }
 
 #nav-drawer {
@@ -631,6 +641,7 @@ nav{
 span{
   margin-left:6px;
   margin-top:7px;
+  display: block;
 }
 #nav-open span:before {
   bottom: -8px;
@@ -680,7 +691,13 @@ span{
   transform: translateX(0%);/*中身を表示（右へスライド）*/
   box-shadow: 6px 0 25px rgba(0,0,0,.15);
 }
-
+}
+.fa-bars:before{
+  color: #FFF;
+}
+.main-visual-content{
+  width: 100%
+}
 
 
 
